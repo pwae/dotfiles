@@ -1,0 +1,415 @@
+#
+## Settings - sorted alphabetically
+#
+
+## need to look at query_command and signature
+
+  set abort_nosubject=no
+  set abort_unmodified=yes
+  set alias_file = "~/.mutt/aliases"
+  set alias_format = "%4n %2f %t %-10a   %r"
+unset allow_8bit
+unset allow_ansi
+      alternates (scott@sbs.id.au|scott-.*@sbs.id.au|ssinclai@cit.uws.edu.au|15732981@student.uws.edu.au|praetorian@atomicirc.com|earp@atomicirc.com|scott@nullis.net|ssinclair@users.sourceforge.net)
+unset arrow_cursor
+unset ascii_chars
+unset askbcc
+unset askcc
+  set attach_format = "%u%D%I %t%4n %T%.40d%> [%.7m/%.10M, %.6e%?C?, %C?, %s]"
+  set attach_sep = "\n"
+  set attach_split
+  set attribution = "On %d, %n wrote:"
+  set autoedit
+  set auto_tag
+  set beep
+  set beep_new
+  set bounce = ask-yes
+  set bounce_delivered
+unset braille_friendly
+  set certificate_file = "~/.mutt/certificates"
+#  set charset = ""
+  set check_new
+unset collapse_unread
+  set compose_format = "-- Mutt: Compose [Approx. msg size: %l Atts: %a]%>-"
+# set config_charset = ""
+unset confirmappend
+  set confirmcreate
+  set connect_timeout = 30
+  set content_type = "text/plain"
+  set copy
+  set crypt_autopgp
+unset crypt_autosign 
+unset crypt_autoencrypt
+  set crypt_autosmime
+  set crypt_replyencrypt
+unset crypt_replysign
+unset crypt_replysignencrypted
+  set crypt_timestamp
+# set crypt_use_gpgme
+  set crypt_verify_sig
+  set date_format = "!%a %d %b, %Y at %T %Z"
+  set default_hook = "~f %s | ~t %s"
+  set delete = yes
+  set delete_untag
+  set digest_collapse = yes
+# set display_filter = ""
+#  set dotlock_program = "/usr/bin/muttng_dotlock"
+# set dsn_notify = ""
+# set dsn_return = ""
+  set duplicate_threads
+#  set edit_headers
+  set editor = "vim -c 'set tw=76 noautoindent expandtab notitle ft=mail' +"
+  set encode_from
+# set envelope_from_address = ""
+  set escape = "~"
+  set fast_reply
+  set fcc_attach
+unset fcc_clear
+  set folder = "imaps://mail/"
+  set folder_format = " %N  %f  %> %d  %8s "
+  set followup_to
+unset force_name
+  set forward_decode
+unset forward_decrypt
+  set forward_edit = ask-yes
+  set forward_format = "fwd: %s"
+unset forward_quote
+# set from = "scott@sbs.id.au'"
+  set gecos_mask = "^[^,]*"
+  set hdrs
+unset header
+  set header_cache = "~/.mutt/cache/"
+# set header_cache_pagesize = '16384'
+  set help
+unset hidden_host
+unset hide_limited
+  set hide_missing
+  set hide_thread_subject
+unset hide_top_limited
+  set hide_top_missing
+  set history = 50
+  set honor_followup_to
+  set hostname = "sbs.id.au"
+unset ignore_list_reply_to
+unset imap_authenticators
+unset imap_check_subscribed
+  set imap_delim_chars = "/."
+# set imap_headers = ""
+# set imap_home_namespace = ""
+  set imap_keepalive = 900
+unset imap_list_subscribed
+# set imap_login = "praetorian"
+# set imap_pass = ""
+  set imap_passive
+  set imap_peek
+unset imap_servernoise
+  set imap_user = "praetorian"
+  set implicit_autoview
+  set include = yes
+unset include_onlyfirst
+  set indent_string = "> "
+  set index_format = "%5C %Z %[!%d/%m] [%-15.15n] %s"
+  set ispell = "/usr/bin/ispell-aspell"
+  set keep_flagged
+  set locale = "C"
+  set mail_check = 60
+# set mailcap_path = ""
+  set mailcap_sanitize
+  set maildir_header_cache_verify
+unset maildir_trash
+unset mark_old
+unset markers
+# set mask = "!^\.[^.]"
+  set mbox = imaps://mail/
+  set mbox_type = "Maildir"
+  set menu_context = 0
+  set menu_move_off
+  set menu_scroll
+  set message_format = "%s"
+unset meta_key
+unset metoo
+  set mh_purge
+  set mh_seq_flagged = "flagged"
+  set mh_seq_replied = "replied"
+  set mh_seq_unseen = "unseen"
+  set mime_forward = yes
+unset mime_forward_decode
+  set mime_forward_rest = yes
+#  set mix_entry_format = "%4n %c %-16s %a"
+#  set mixmaster = "mixmaster"
+  set move = no
+  set narrow_tree
+  set net_inc = 10
+  set pager = "builtin"
+  set pager_context = 1
+  set pager_format = "%S %n [%s]"
+  set pager_index_lines = 4
+unset pager_stop
+#unset pgp_auto_decode
+#unset pgp_autoinline
+# set pgp_check_exit
+# set pgp_entry_format = "%4n %t%f %4l/0x%k %-4a %2c %u"
+#unset pgp_good_sign
+# set pgp_ignore_subkeys
+#unset pgp_long_ids
+#  set pgp_mime_auto = ask-yes
+#unset pgp_replyinline
+#unset pgp_retainable_sigs
+#unset pgp_show_unusable
+#unset pgp_sign_as
+#  set pgp_sort_keys = "address"
+#  set pgp_strict_enc
+#  set pgp_timeout=1000
+#unset pgp_use_gpg_agent
+unset pipe_decode
+  set pipe_sep = "\n"
+  set pipe_split
+# set post_indent_string = ""
+  set postpone = ask-yes
+  set postponed = imaps://mail/Drafts
+  set print = ask-yes
+unset prompt_after
+#  set query_command = "mutt_vc_query '%s'"
+# set query_command="lbdbq %s"
+  set query_command="goobook query '%s'"
+  set quit = yes
+  set quote_regexp = "^( {0,4}-?[>|:]| {0,4}[a-z0-9]+[>|]+)+"
+  set read_inc = 25
+unset read_only
+  set recall = no
+  set record = imaps://mail/Sent
+  set realname = "Scott Sinclair"
+  set reply_regexp = "^((re|RE|SV|Re|r e|aw):[ \t]*)*"
+unset reply_self
+  set reply_to = yes
+  set resolve
+unset reverse_alias
+  set reverse_name
+  set reverse_realname
+unset save_address
+unset save_empty
+unset save_name
+unset score
+  set sig_dashes
+unset sig_on_top
+  set simple_search = "~f %s | ~C %s | ~s %s"
+  set smart_wrap
+  set smime_ask_cert_label
+  set smime_decrypt_use_default_key
+unset smime_is_default
+  set sort = threads
+  set sort_alias = "alias"
+  set sort_aux = reverse-date-received
+  set sort_browser = alpha
+  set sort_re
+  set spoolfile = "imaps://mail/"
+  set ssl_starttls
+# set ssl_use_sslv2
+# set ssl_use_sslv3
+  set ssl_use_tlsv1
+  set status_format = "-%r-Mutt: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b? %?l? %l?]--%>-(%P)---"
+unset status_on_top
+unset strict_threads
+unset suspend
+  set thorough_search
+  set tilde
+  set timeout = 30
+  set tmpdir = "/tmp"
+unset uncollapse_jump
+unset use_8bitmime
+unset use_domain
+unset use_from
+  set user_agent
+unset wait_key
+  set wrap_search
+  set write_inc = 25
+unset write_bcc
+#  set sendmail = "/usr/sbin/sendmail -oem -oi"
+  set sendmail = "/usr/sbin/ssmtp"
+
+#
+## Sidebar stuff
+#
+set sidebar_width=25
+set sidebar_visible=yes
+set sidebar_delim='│'
+color sidebar_new brightgreen default
+bind index \CP sidebar-prev
+bind index \CN sidebar-next
+bind index \CO sidebar-open
+bind pager \CP sidebar-prev
+bind pager \CN sidebar-next
+bind pager \CO sidebar-open
+macro index b '<enter-command>toggle sidebar_visible<enter>'
+macro pager b '<enter-command>toggle sidebar_visible<enter>'
+bind index B bounce-message
+
+#
+## Colours
+#
+
+#  match ftp addresses:
+color body    cyan black "ftp://[^ ]*"
+#  match http addresses:
+color body    brightgreen black "[[:alnum:]][-+.#_[:alnum:]]*@[-+.[:alnum:]]*[[:alnum:]]"
+color normal  white black # pager body
+
+#  Coloring quoted text - coloring the first 7 levels:
+color quoted    cyan black
+color quoted1   yellow black
+color quoted2   red black
+color quoted3   green black
+color quoted4   cyan black
+color quoted5   yellow black
+color quoted6   red black
+color quoted7   green black
+
+color signature brightred black
+color status    white blue
+color tilde     blue black
+color tree      brightmagenta black
+color underline yellow black
+
+#  Colorize smileys:  :-)  ;-)  :-/  :-(
+color body  white black "[;:]-[)/(|]"
+color body  white black "[;:][)/(|]"
+color body  green black "[[:alpha:]]\+://[^ ]*"
+
+color header red black '^Subject.*'
+color header green black 'From:.*'
+
+#  Remember:  Order counts!  The last matching rule "wins".
+#  So we'll start with some general rules first:
+#
+color index white black ~N      # New
+color index white black ~O      # Old
+
+# mailing list colours
+#color index cyan black '~s "^\\[(SLUG|chat|activities)\\].*"'
+color index cyan black '~u ~L ".*@slug\.org\.au"'
+color index green black '~u ~L ".*@lists\.ausnog\.net"'
+color index green black '~u ~L ".*@ausnog\.net"'
+
+# mail to myself (personal mail):
+color index brightgreen black '~p'
+
+color index magenta black ~F
+color index blue black ~T
+color index red black ~D
+
+unignore *
+ignore content deliver errors-to importance in-reply list mail message-id
+ignore mime precedence priority received references resent return-path sender
+ignore x-accept x-authentication x-beenthere x-cid x-complaints x-dispatcher
+ignore x-egroups x-envelope x-fingerprint x-juno x-keywords x-loop
+ignore x-mailing x-mailman x-mime x-ms x-news x-origina x-orcpt envelope
+ignore x-priority x-sender x-smtp x-trace x-uid x-unsent x-ftn
+ignore old-x-envelope x-gateway old-return-path x-virus-scanned
+ignore x-spam x-return-path x-authenticated-sender x-md x-list x-scanner
+ignore "from " status lines x-status >from x-received x-bogosity
+# awesome barracuda spam headers
+ignore x-asg x-barracuda
+ignore domainkey-signature
+ignore x-brightmail x-ironport
+# some gmail stuff
+ignore dkim-signature x-apparently-to authentication-results x-google-loop
+
+hdr_order Date From: Reply-To: To: Cc: Bcc: Subject:
+
+unmy_hdr *
+
+my_hdr X-No-CC: Please respect the setting of my Mail-Followup-To header
+my_hdr From: Scott Sinclair <scott@sbs.id.au>
+
+#
+## Autoview settings
+#
+
+auto_view text/html text/enriched application/x-gunzip
+auto_view application/postscript image/gif application/x-tar-gz
+auto_view application/pgp-signature
+
+alternative_order text/enriched text/plain text
+
+#
+## Keybindings
+#
+
+bind    index   <right>  display-message
+bind    pager   <up>     previous-line
+bind    pager   <down>   next-line
+macro   query   <enter> "<mail>\n"              "Mail"
+bind    browser <right>  select-entry
+
+#
+## Mailing lists
+#
+
+unlists *
+unsubscribe *
+
+# AustNet
+lists help@austnet.org services@austnet.org dev@austnet.org asd@austnet.org asdadmin@austnet.org
+subscribe help@austnet.org services@austnet.org dev@austnet.org asd@austnet.org asdadmin@austnet.org
+
+# SLUG
+lists slug@slug.org.au announce@slug.org.au activities@slug.org.au slug-chat@slug.org.au
+subscribe slug@slug.org.au announce@slug.org.au activities@slug.org.au slug-chat@slug.org.au
+
+# Ubuntu
+lists sounder@lists.ubuntu.com ubuntu-doc@lists.ubuntu.com edubuntu-devel@lists.ubuntu.com
+subscribe sounder@lists.ubuntu.com ubuntu-doc@lists.ubuntu.com edubuntu-devel@lists.ubuntu.com
+
+# 2600
+lists 2600-network@wiretapped.net 2600-list@wiretapped.net
+subscribe 2600-network@wiretapped.net 2600-list@wiretapped.net
+
+# auscert
+lists national-alerts@auscert.org.au
+subscribe national-alerts@auscert.org.au
+
+# gentoo
+lists gentoo-amd64@lists.gentoo.org
+subscribe gentoo-amd64@lists.gentoo.org
+
+lists ausnog@lists.ausnog.net ausnog@ausnog.net
+subscribe ausnog@lists.ausnog.net ausnog@ausnog.net
+
+#
+## Mailboxes
+#
+
+mailboxes =INBOX =Reminders =INBOX.Athletics =Spam
+
+
+#
+## PGP Stuff
+#
+
+#set pgp_decode_command="gpg %?p?--passphrase-fd 0? --no-verbose --batch --output - %f"
+#set pgp_verify_command="gpg --no-verbose --batch --output - --verify %s %f"
+#set pgp_decrypt_command="gpg --passphrase-fd 0 --no-verbose --batch --output - %f"
+#set pgp_sign_command="gpg --no-verbose --batch --output - --passphrase-fd 0 --armor --detach-sign --textmode %?a?-u %a? %f"
+#set pgp_clearsign_command="gpg --no-verbose --batch --output - --passphrase-fd 0 --armor --textmode --clearsign %?a?-u %a? %f"
+#set pgp_encrypt_only_command="pgpewrap gpg --batch --quiet --no-verbose --output - --encrypt --textmode --armor --always-trust --encrypt-to 0xC9C40C31 -- -r %r -- %f"
+#set pgp_encrypt_sign_command="pgpewrap gpg --passphrase-fd 0 --batch --quiet --no-verbose --textmode --output - --encrypt --sign %?a?-u %a? --armor --always-trust --encrypt-to 0xC9C40C31 -- -r %r -- %f"
+#set pgp_import_command="gpg --no-verbose --import -v %f"
+#set pgp_export_command="gpg --no-verbose --export --armor %r"
+#set pgp_verify_key_command="gpg --no-verbose --batch --fingerprint --check-sigs %r"
+#set pgp_list_pubring_command="gpg --no-verbose --batch --with-colons --list-keys %r" 
+#set pgp_list_secring_command="gpg --no-verbose --batch --with-colons --list-secret-keys %r" 
+#set pgp_autosign=yes
+#set pgp_sign_as=0x4D8110CE
+#set pgp_replyencrypt=yes
+#set pgp_timeout=1800
+#set pgp_good_sign="^gpg: Good signature from"
+
+set sendmail_wait = 60
+
+#source /etc/Muttrc.gpg.dist
+
+macro generic S  ":set autoedit=no editor=\"/bin/true\"\n<tag-prefix><forward-message>spamsandwich@eternity.nullis.net\n\n<send-message>:set autoedit=yes editor=\"vim -c 'set tw=76 noautoindent expandtab notitle ft=mail' +\"\n" "Submit email to SpamAssassin as Spam"
+macro generic \` ":set autoedit=no editor=\"/bin/true\"\n<tag-prefix><forward-message>hamsandwich@eternity.nullis.net\n\n<send-message>:set autoedit=yes editor=\"vim -c 'set tw=76 noautoindent expandtab notitle ft=mail' +\"\n" "Submit email to SpamAssassin as Ham"
+
+#macro generic `
+source ~/.mutt/aliases
