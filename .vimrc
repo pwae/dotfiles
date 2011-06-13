@@ -1,7 +1,3 @@
-if v:progname =~? "evim"
-      finish
-endif
-
 version 6.0
 if &cp | set nocp | endif
 map Q gq
