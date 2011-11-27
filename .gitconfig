@@ -1,5 +1,10 @@
 [user]
-	name = pwae
+	name = Scott Sinclair
 	email = scott@nullis.net
+[color]
+    ui = auto
 [github]
 	user = pwae
+[alias]
+    up = pull --rebase
+    st = status
