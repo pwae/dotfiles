@@ -12,6 +12,11 @@ export LESS='-R'
 export PAGER='less'
 export VISUAL='vim'
 
+### If virtualenvwrapper is installed, source it to load up its commands
+if hash virtualenvwrapper.sh 2>&-; then
+    source `which virtualenvwrapper.sh`
+fi
+
 ### Here we over-ride some command commands to add in our default options
 alias bc='bc -l'
 alias cp='cp -i'
