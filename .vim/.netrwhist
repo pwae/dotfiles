@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/praetorian/dev/nullis/core/virtmail'
-let g:netrw_dirhist_2='/home/praetorian/dev/autoreports/core/seatmap'
-let g:netrw_dirhist_3='/home/praetorian/dev/nullis/core/tvdb/mapping'
-let g:netrw_dirhist_4='/home/praetorian/minecraft/server/plugins/Permissions'
-let g:netrw_dirhist_5='/home/praetorian/dev/dotfiles/.git'
