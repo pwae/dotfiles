@@ -40,7 +40,7 @@ alias rm='rm -I'
 alias ..='cd ..'
 alias b='cd -'
 alias tmux='tmux -2'
-alias tm='tm'
+alias tm='tmux'
 alias ta='tm attach -t0'
 
 ### custom "function" commands
