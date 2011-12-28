@@ -39,7 +39,8 @@ alias ping='ping -c 5'
 alias rm='rm -I'
 alias ..='cd ..'
 alias b='cd -'
-alias tm='tmux -2'
+alias tmux='tmux -2'
+alias tm='tm'
 alias ta='tm attach -t0'
 
 ### custom "function" commands
