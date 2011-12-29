@@ -8,6 +8,7 @@
 export EDITOR='vim'
 export GREP_COLOR='01;38;5;157'
 export HISTCONTROL=ignoreboth
+export HISTFILESIZE=2000
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 export LESS='-R'
 export PAGER='less'
@@ -92,7 +93,7 @@ complete -cf man
 myuser=`/usr/bin/whoami`
 case "$myuser" in
 praetorian|prae)
-	PS1='[\t] ${VIRTUAL_ENV:+(`basename ${VIRTUAL_ENV%/*}`)}\[\033[01;32m\]@\h \[\033[00m\]\w \! \[\033[01;34m\]\$\[\033[00m\] '
+	PS1='[\t] ${VIRTUAL_ENV:+\033[38;5;87m(`basename ${VIRTUAL_ENV}`) }\[\033[01;32m\]@\h \[\033[00m\]\w \! \[\033[01;34m\]\$\[\033[00m\] '
 	;;
 root)
 	PS1='[\t] \[\033[38;5;196m\]@\h \[\033[00m\]\w \! \[\033[01;34m\]\$\[\033[00m\] '
