@@ -37,11 +37,13 @@ else
     alias diff='diff'
 fi
 
-# determine os for ls flags
+# specific settings for os specific options
 if [[ $os_type == "Darwin" ]]; then
     alias ls='ls -GhF'
+    alias rm='rm'
 else
     alias ls='ls --color=auto -hF'
+    alias rm='rm -I'
 fi
 
 alias du='du -ch'
@@ -53,7 +55,6 @@ alias more='less'
 alias mv='mv -i'
 alias nano='nano -w'
 alias ping='ping -c 5'
-alias rm='rm -I'
 alias ..='cd ..'
 alias b='cd -'
 alias tmux='tmux -2'
