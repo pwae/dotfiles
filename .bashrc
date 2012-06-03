@@ -13,6 +13,7 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 export LESS='-R'
 export PAGER='less'
 export VISUAL='vim'
+export VIRTUALENV_DISTRIBUTE='yes'
 
 ### If virtualenvwrapper is installed, source it to load up its commands
 if hash virtualenvwrapper.sh 2>&-; then
@@ -33,6 +34,7 @@ alias grep='grep --color=auto'
 alias ln='ln -i'
 alias ls='ls --color=auto -hF'
 alias mkdir='mkdir -pv'
+alias mkv='mkvirtualenv --distribute'
 alias more='less'
 alias mv='mv -i'
 alias nano='nano -w'
