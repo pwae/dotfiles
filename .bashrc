@@ -15,6 +15,13 @@ export PAGER='less'
 export VISUAL='vim'
 export VIRTUALENV_DISTRIBUTE='yes'
 
+## Local variables for letter on
+if hash uname 2>&-; then
+    os_type=`uname -s`
+else
+    os_type="unknown"
+fi
+
 ### If virtualenvwrapper is installed, source it to load up its commands
 if hash virtualenvwrapper.sh 2>&-; then
     source `which virtualenvwrapper.sh`
@@ -29,10 +36,17 @@ if hash colordiff 2>&-; then
 else
     alias diff='diff'
 fi
+
+# determine os for ls flags
+if [[ $os_type == "Darwin" ]]; then
+    alias ls='ls -GhF'
+else
+    alias ls='ls --color=auto -hF'
+fi
+
 alias du='du -ch'
 alias grep='grep --color=auto'
 alias ln='ln -i'
-alias ls='ls --color=auto -hF'
 alias mkdir='mkdir -pv'
 alias mkv='mkvirtualenv --distribute'
 alias more='less'
