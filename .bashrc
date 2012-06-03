@@ -96,7 +96,10 @@ alias pg='ps -ef | grep $1'
 alias down='cd /storage/Unsorted/'
 alias nzb='down'
 ### misc stuff
-eval $(dircolors -b)
+
+if hash dircolors 2>&-; then
+    eval $(dircolors -b)
+fi
 
 ### window resize - make sure things keep wrapping
 shopt -s checkwinsize
