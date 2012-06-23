@@ -39,7 +39,7 @@ fi
 
 # specific settings for os specific options
 if [[ $os_type == "Darwin" ]]; then
-    export LSCOLORS=dxfxcxdxbxegedabagacad
+    export LSCOLORS=Exfxcxdxbxegedabagacad
     alias ls='ls -GhF'
     alias rm='rm'
 else
