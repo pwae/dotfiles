@@ -31,7 +31,7 @@ endif
 syntax on
 
 set background=dark
-color evening
+color darkblue
 set autoindent
 
 " This if for python folding
