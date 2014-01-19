@@ -14,6 +14,14 @@ export LESS='-R'
 export PAGER='less'
 export VISUAL='vim'
 export VIRTUALENV_DISTRIBUTE='yes'
+export PATH=$PATH:~/bin:/usr/local/mysql/bin
+
+# EC2 settings - softix
+export EC2_HOME=~/.ec2
+export PATH=$PATH:$EC2_HOME/bin
+export EC2_PRIVATE_KEY=`ls $EC2_HOME/pk-*.pem`
+export EC2_CERT=`ls $EC2_HOME/cert-*.pem`
+export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
 
 ## Local variables for letter on
 if hash uname 2>&-; then
@@ -40,6 +48,8 @@ fi
 # specific settings for os specific options
 if [[ $os_type == "Darwin" ]]; then
     export LSCOLORS=Exfxcxdxbxegedabagacad
+    export DYLD_LIBRARY_PATH="/usr/local/mysql-5.6.11-osx10.7-x86_64/lib:$DYLD_LIBRARY_PATH"
+    export PATH=/Library/Frameworks/Python.framework/Versions/Current/bin:$PATH
     alias ls='ls -GhF'
     alias rm='rm'
 else
@@ -61,6 +71,8 @@ alias b='cd -'
 alias tmux='tmux -2'
 alias tm='tmux'
 alias ta='tm attach -t0'
+
+alias rebuildopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
 
 ### custom "function" commands
 function rd () { ( rdesktop -g 1280x1024 $1 ) & }

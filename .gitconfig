@@ -8,3 +8,5 @@
 [alias]
     up = pull --rebase
     st = status
+[push]
+	default = simple
