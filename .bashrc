@@ -21,7 +21,6 @@ export EC2_HOME=~/.ec2
 export PATH=$PATH:$EC2_HOME/bin
 export EC2_PRIVATE_KEY=`ls $EC2_HOME/pk-*.pem`
 export EC2_CERT=`ls $EC2_HOME/cert-*.pem`
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
 
 ## Local variables for letter on
 if hash uname 2>&-; then
@@ -50,6 +49,9 @@ if [[ $os_type == "Darwin" ]]; then
     export LSCOLORS=Exfxcxdxbxegedabagacad
     export DYLD_LIBRARY_PATH="/usr/local/mysql-5.6.11-osx10.7-x86_64/lib:$DYLD_LIBRARY_PATH"
     export PATH=/Library/Frameworks/Python.framework/Versions/Current/bin:$PATH
+
+    # for ec2 library
+    export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
     alias ls='ls -GhF'
     alias rm='rm'
 else
